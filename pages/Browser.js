@@ -94,19 +94,18 @@ const defaultSession = {
   },
 }
 
-export default function Home() {
-    const state = createViewState({
-      assembly,
-      tracks,
-      location: '10:29,838,737..29,838,819',
-      defaultSession,
-    })
-    
-    return (
-      <div>
-        <ThemeProvider theme={theme}>
-          <JBrowseLinearGenomeView viewState={state} />
-        </ThemeProvider>
-      </div>
-    )
+function View() {
+  const state = createViewState({
+    assembly,
+    tracks,
+    location: '10:29,838,737..29,838,819',
+    defaultSession,
+  })
+  return (
+    <ThemeProvider theme={theme}>
+      <JBrowseLinearGenomeView viewState={state} />
+    </ThemeProvider>
+  )
 }
+
+export default View
