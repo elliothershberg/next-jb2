@@ -2,8 +2,52 @@ import {
   createViewState,
   createJBrowseTheme,
   JBrowseLinearGenomeView,
-  ThemeProvider,
+  ThemeProvider
 } from '@jbrowse/react-linear-genome-view'
+
+// import dynamic from 'next/dynamic'
+
+// const createViewState = dynamic(() =>
+//   import('@jbrowse/react-linear-genome-view')
+//     .then(module => module.createViewState),
+//   { ssr: false }
+// )
+
+// const createJBrowseTheme = dynamic(() =>
+//   import('@jbrowse/react-linear-genome-view')
+//     .then(module => module.createJBrowseTheme),
+//   { ssr: false }
+// )
+
+// const JBrowseLinearGenomeView = dynamic(() =>
+//   import('@jbrowse/react-linear-genome-view')
+//     .then(module => module.JBrowseLinearGenomeView),
+//   { ssr: false }
+// )
+
+// const ThemeProvider = dynamic(() =>
+//   import('@jbrowse/react-linear-genome-view')
+//     .then(module => module.ThemeProvider),
+//   { ssr: false }
+// )
+
+// const dynamicImportsNoSSR = dynamic(
+//   () => import('@jbrowse/react-linear-genome-view')
+//     .then(mod => {
+//       mod.createViewState,
+//       mod.createJBrowseTheme,
+//       mod.JBrowseLinearGenomeView,
+//       mod.ThemeProvider
+//     }),
+//   { ssr: false }
+// )
+
+// {
+//   createViewState,
+//   createJBrowseTheme,
+//   JBrowseLinearGenomeView,
+//   ThemeProvider,
+// }
 
 const theme = createJBrowseTheme()
 
